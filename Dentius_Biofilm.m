@@ -1,4 +1,4 @@
-%This script computes the bacterial vitality for in situ oral biofilm
+%This script computes the bacterial viability for in situ oral biofilm
 %The objective is to compare the bacterial viability with and without
 %brushing and with different kinds of colutories (Essential oils vs Clorhexidin)
 %The volunteers carry on an IDODS (intraoral device of overlaid disk-holding splints)
@@ -109,7 +109,7 @@ for p=1:num_patients
                     maskR=im2bw(fR,threshold_HIGH/255);%red>threshold_HIGH
                     
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                    %FIRST STAGE: COMPUTATION OF VITALITY PIXELS (GREEN)
+                    %FIRST STAGE: COMPUTATION OF VITAL PIXELS (GREEN)
                     %VITAL(alife): green (green>threshold_HIGH and red<threshold_HIGH)
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                     mask_V=and(maskG,not(maskR));
@@ -118,11 +118,11 @@ for p=1:num_patients
                     %figure('Name','ALIFE: G>100 and R<100'), imshow(fcolourV,'InitialMagnification','fit')
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                     %Computation of vital pixels: green
-                    area_alife=sum(mask_V(:)==1);
+                    area_vital=sum(mask_V(:)==1);
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                     
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                    %SECOND STAGE: COMPUTATION OF DEAD PIXELS (RED and ORANGE)
+                    %SECOND STAGE: COMPUTATION OF NON VITAL PIXELS (RED and ORANGE)
                     %NON VITAL (dead): orange (green and red over threshold_HIGH)
                     %NON VITAL (dead): red (green<threshold_HIGH and red>threshold_HIGH)
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -148,8 +148,8 @@ for p=1:num_patients
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                     
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                    %RESULT: Percentage of vitality WITHOUT ELIMINATING EPITHELIAL CELL NUCLEI
-                    vitality=area_alife/(area_alife+area_orange+area_red);
+                    %RESULT: Percentage of viability WITHOUT ELIMINATING EPITHELIAL CELL NUCLEI
+                    viability=area_vital/(area_vital+area_orange+area_red);
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                     
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -191,14 +191,14 @@ for p=1:num_patients
                         end
                         
                         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                        %RESULT: Percentage of vitality ELIMINATING EPITHELIAL CELL NUCLEI
-                        vitality_ECN=area_alife/(area_alife+area_orange+area_red-area_nuclei);
+                        %RESULT: Percentage of viability ELIMINATING EPITHELIAL CELL NUCLEI
+                        viability_ECN=area_vital/(area_vital+area_orange+area_red-area_nuclei);
                         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                     else
-                        vitality_ECN=vitality;
+                        viability_ECN=viability;
                     end
                     %Results are stored in results matrix MR
-                    MR=[MR;d,c,z,area_alife,area_red,area_orange,area_nuclei,length(idx),vitality*100,vitality_ECN*100];
+                    MR=[MR;d,c,z,area_alife,area_red,area_orange,area_nuclei,length(idx),viability*100,viability_ECN*100];
                     close all %delete all figures
                 end %end of file
             end %end of layers
