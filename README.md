@@ -1,23 +1,20 @@
-**DentiusBiofilm** is a toolbox for computation of oral biofilm vitality
+**DentiusBiofilm** is a toolbox for computation of bacterial vitality for in situ oral biofilm
 
-Zebrafish (_Danio rerio_) is a model organism that has emerged as a tool for **cancer
-research**, cancer being the second most common cause of death after cardiovascular
-disease for humans in the developed world.
+The objective is to compare the bacterial viability with and without brushing and with different kinds of colutories (Essential oils vs Clorhexidin)
+The volunteers carry on an **IDODS** (intraoral device of overlaid disk-holding splints) split model with several disks and fields to measure the vitality of bacterias on accumulated biofilm
+Images are acquired through a confocal microscopy
 
-Zebrafish is a useful model for
-xenotransplantation of human cancer cells and toxicity studies of different
-chemotherapeutic compounds in vivo. Compared to the murine model, the zebrafish
-model is **faster**, can be screened using **high-throughput methods** and has a **lower
-maintenance cost**, making it possible and affordable to create personalized therapies.
+For each patient with IDODS: 
+ * number of disks (different places of IDODS around the dental arcade)
+ * number of fields 1 micrometer thickness
+ * number of layers in z-axis from confocal microscopy
 
-While several methods for cell proliferation determination based on image acquisition
-and quantification have been developed, some drawbacks still remain. In the
-xenotransplantation technique, quantification of cellular proliferation in vivo is critical to
-standardize the process for future preclinical applications of the model.
+**DentiusBiofilm** automatically computes the bacterial vitality for each patient for each experiment although each patient have different number of disks/fields/layers. It works with the informantion of folder hierarchy.
 
-ZFtool can establish a base threshold that eliminates embryo auto-fluorescence and
-measures the area of marked cells (GFP) and the intensity of those cells to define a
-*proliferation index*.
+**DentiusBiofilm** automatically eliminates from the computation the non vital pixels belonging to *endothelial cell nuclei*
+
+**DentiusBiofilm** stores all the vitality results (with and without considering endothelial cell nuclei) in a spreadsheet called  `EE_results.xlsx`. It also stores number and properties of endothelial cell nuclei. 
+
 
 ## Usage
 
@@ -36,7 +33,7 @@ Set1/E1/VQ/VQ_E1_D?C?_z???_red.tif
 
 With the included images you can run the following example:
 
- * Image folder: Set1
- * Experiment folder: E1
- * Patient folder: VC
- * Patient folder VQ
+ * Image folder: `Set1`
+ * Experiment folder: `E1`
+ * Patient folder: `VC`
+ * Patient folder `VQ`
