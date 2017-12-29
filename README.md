@@ -11,9 +11,9 @@ For each patient with IDODS:
 
 **DentiusBiofilm** automatically computes the bacterial vitality for each patient for each experiment although each patient have different number of disks/fields/layers. It works with the informantion of folder hierarchy.
 
-**DentiusBiofilm** automatically eliminates from the computation the non vital pixels belonging to *endothelial cell nuclei*
+**DentiusBiofilm** automatically eliminates from the computation the non vital pixels belonging to *epithelial cell nuclei*
 
-**DentiusBiofilm** stores all the vitality results (with and without considering endothelial cell nuclei) in a spreadsheet called  `EE_results.xlsx`. It also stores number and properties of endothelial cell nuclei. 
+**DentiusBiofilm** stores all the vitality results (with and without considering epithelial cell nuclei) in a spreadsheet called  `EE_results.xlsx`. It also stores number and properties of endothelial cell nuclei. 
 
 
 ## Usage
