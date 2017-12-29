@@ -2,7 +2,7 @@
 
 *Author: Maria J. Carreira (CiTIUS, USC)*
 
-*Collaborators: Inmaculada Tomás, Carlos Balsa (Oral Research Group, USC)*
+*Collaborators: Inmaculada Tomás, Carlos Balsa (Oral Sciences Research Group, USC)*
 
 *Reference paper with use of the toolbox: Quintas V, Prada-López I, Carreira MJ, Suárez-Quintanilla D, Balsa-Castro C and Tomás I: In Situ Antibacterial Activity of Essential Oils with and without Alcohol on Oral Biofilm: A Randomized Clinical Trial. Front. Microbiol. 8:2162. doi: 10.3
 Frontiers in Microbiology, vol. November 2017, no. 23. 2017*
