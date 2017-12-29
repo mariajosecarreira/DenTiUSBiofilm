@@ -4,7 +4,7 @@ The objective is to compare the bacterial viability with and without brushing an
 The volunteers carry on an **IDODS** (intraoral device of overlaid disk-holding splints) split model with several disks and fields to measure the vitality of bacterias on accumulated biofilm
 Images are acquired through a confocal microscopy
 
-For each patient with IDODS: 
+For each patient with IDODS (intraoral device of overlaid disk-holding splints): 
  * number of disks (different places of IDODS around the dental arcade)
  * number of fields 1 micrometer thickness
  * number of layers in z-axis from confocal microscopy
@@ -19,10 +19,11 @@ For each patient with IDODS:
 ## Usage
 
 The images are classified within a **set**, then within an **experiment** and then within a **patient**, each hierarchically in **their own folder**, so images for the patient `VC` for experiment `E1` and set `Set1` will be inside the folder `Set1/E1/VC`. The format of images is the following, being `PP`the patient initials, `EE` the experiment, `d` the disk number, `c` the field number and `XXX` the layer number:
+
  * Green image, named `PP_EE_Dd_Cc_zXXX_green.tif`
  * Red image, named `PP_EE_Dd_Cc_zXXX_red.tif`
 
-There is an example included in the repository, in the folder `Set1`:
+There is an example included in the repository, with all the folder hierarchy in file `Set1.zip`:
 
 ```
 Set1/E1/VC/VC_E1_DdCc_zXXX_green.tif
