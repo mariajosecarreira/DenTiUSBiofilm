@@ -25,10 +25,10 @@ The images are classified within a **set**, then within an **experiment** and th
 There is an example included in the repository, in the folder `Set1`:
 
 ```
-Set1/E1/VC/VC_E1_D?C?_z???_green.tif
-Set1/E1/VC/VC_E1_D?C?_z???_red.tif
-Set1/E1/VQ/VQ_E1_D?C?_z???_green.tif
-Set1/E1/VQ/VQ_E1_D?C?_z???_red.tif
+Set1/E1/VC/VC_E1_DdCc_zXXX_green.tif
+Set1/E1/VC/VC_E1_DdCc_zXXX_red.tif
+Set1/E1/VQ/VQ_E1_DdCc_zXXX_green.tif
+Set1/E1/VQ/VQ_E1_DdCc_zXXX_red.tif
 ```
 
 With the included images you can run the following example:
