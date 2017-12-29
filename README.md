@@ -1,4 +1,4 @@
-**DentiusBiofilm** is a toolbox for computation of bacterial vitality for in situ oral biofilm
+**Dentius_Biofilm** is a toolbox for computation of bacterial viability for *in situ* oral biofilm
 
 *Author: Maria J. Carreira (CiTIUS, USC)*
 
