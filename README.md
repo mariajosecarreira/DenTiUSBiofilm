@@ -1,10 +1,10 @@
 **DentiusBiofilm** is a toolbox for computation of bacterial vitality for in situ oral biofilm
 
-*Author: Maria J. Carreira (CiTIUS, USC)
+*Author: Maria J. Carreira (CiTIUS, USC)*
 
-Collaborators: Inmaculada Tomás, Carlos Balsa (Oral Research Group, USC)
+*Collaborators: Inmaculada Tomás, Carlos Balsa (Oral Research Group, USC)*
 
-Reference paper with use of the toolbox: Quintas V, Prada-López I, Carreira MJ, Suárez-Quintanilla D, Balsa-Castro C and Tomás I: In Situ Antibacterial Activity of Essential Oils with and without Alcohol on Oral Biofilm: A Randomized Clinical Trial. Front. Microbiol. 8:2162. doi: 10.3
+*Reference paper with use of the toolbox: Quintas V, Prada-López I, Carreira MJ, Suárez-Quintanilla D, Balsa-Castro C and Tomás I: In Situ Antibacterial Activity of Essential Oils with and without Alcohol on Oral Biofilm: A Randomized Clinical Trial. Front. Microbiol. 8:2162. doi: 10.3
 Frontiers in Microbiology, vol. November 2017, no. 23. 2017*
 
 The objective is to compare the bacterial viability with and without brushing and with different kinds of colutories (Essential oils vs Clorhexidin)
