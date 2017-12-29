@@ -13,12 +13,12 @@ with a supragingivally tooth-formed biofilm in the same individuals, as well as 
 formation.
 
 
-The volunteers carry on an IDODS (iIntraoral dDevice of oOverlaid dDisk-holding sSplints) split model with several disks and fields to measure the viability of bacterias on 
+The volunteers carry on an IDODS (Intraoral Device of Overlaid Disk-holding Splints) split model with several disks and fields to measure the viability of bacterias on 
 accumulated biofilm *in situ*.
 
 Images are acquired through a confocal microscopy, after staining the biofilm samples with the LIVE/DEAD® BacLight™ solution.
 
-For each patient with IDODS (intraoral device of overlaid disk-holding splints): 
+For each patient with IDODS (Intraoral Device of Overlaid Disk-holding Splints): 
  * number of disks (different places of IDODS around the dental arcade)
  * number of fields 1 micrometer thickness
  * number of layers in z-axis from confocal microscopy
