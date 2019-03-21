@@ -127,7 +127,7 @@ for p=1:num_patients
                     %figure('Name','ALIFE: G>100 and R<100'), imshow(fcolourV,'InitialMagnification','fit')
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                     %Computation of vital pixels: green
-                    area_vital=sum(mask_V(:)==1);
+                    area_alife=sum(mask_V(:)==1);
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                     
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -158,7 +158,7 @@ for p=1:num_patients
                     
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                     %RESULT: Percentage of viability WITHOUT ELIMINATING EPITHELIAL CELL NUCLEI
-                    viability=area_vital/(area_vital+area_orange+area_red);
+                    viability=area_vital/(area_alife+area_orange+area_red);
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                     
                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -201,7 +201,7 @@ for p=1:num_patients
                         
                         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                         %RESULT: Percentage of viability ELIMINATING EPITHELIAL CELL NUCLEI
-                        viability_ECN=area_vital/(area_vital+area_orange+area_red-area_nuclei);
+                        viability_ECN=area_alife/(area_alife+area_orange+area_red-area_nuclei);
                         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                     else
                         viability_ECN=viability;
